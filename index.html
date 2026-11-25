@@ -208,7 +208,7 @@
     </section>
 
     <!-- Accessories & Shoes -->
-        <section class="w-full p-5 md:p-8">
+    <section class="w-full p-5 md:p-8">
         <div class="flex items-center justify-between">
             <h1 class="text-lg md:text-2xl font-serif tracking-tighter">Accessories & Shoes</h1>
             <div class="md:flex flex-wrap gap-8 hidden">
@@ -318,7 +318,7 @@
 
 
     <!-- Footer -->
-    <footer class="p-5 md:p-8 bg-zinc-900 text-white md:flex md:items-center md:justify-between">
+    <footer class="p-5 md:p-8 bg-zinc-900 text-white md:flex md:items-center md:justify-between m-15">
         <div>
             <h1 class="text-lg md:text-3xl font-semibold">Prime<span class="text-violet-500">Pick</span></h1>
             <p class="text-sm text-gray-500 mt-1 tracking-tight">Your one-stop shop for all your <br>
@@ -326,10 +326,14 @@
             </p>
 
             <div class="flex gap-5 mt-2">
-                <i class="ri-facebook-circle-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
-                <i class="ri-messenger-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
-                <i class="ri-twitter-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
-                <i class="ri-youtube-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
+                <i
+                    class="ri-facebook-circle-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
+                <i
+                    class="ri-messenger-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
+                <i
+                    class="ri-twitter-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
+                <i
+                    class="ri-youtube-fill text-[18px] md:text-[20px] cursor-pointer hover:text-violet-500 transition-colors duration-300"></i>
             </div>
 
         </div>
@@ -378,9 +382,29 @@
         </div>
     </footer>
 
+    <!-- Footer de remerciements au concepteur -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Pranjal, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=2OM2qcOZZP0" target="_blank">ici</a>. — Chris Blues —
+    </div>
+
 
     <!-- Code injected by live-server -->
+    <script>
+        // Détection du bas de page pour les remerciements au concepteur
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const pageHeight = document.documentElement.scrollHeight;
+            const footer = document.getElementById('thank-you-footer');
 
+            if (scrollPosition >= pageHeight - 50) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 
 </html>
