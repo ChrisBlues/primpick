@@ -1,0 +1,36 @@
+@import url('https://googleapis.com');
+@import "tailwindcss";
+
+@theme {
+    /* Polices */
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --font-mono:"Roboto mono", monospace;
+
+    /* Breakpoints */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 960px;
+    --breakpoint-xl: 1330px;
+
+    /* Colors */
+    --color-primary: #242a2b;
+    --color-secondary: #808080;
+    --color-services: #90C6CD;
+    --color-clifford: #da373d;
+
+    /* Couleurs accent */
+    --color-accent: #1cbccf;
+    --color-accent-secondary: #18abbc;
+    --color-accent-tertiary: #90c6cd;
+
+    /* Gris */
+    --color-grey: #e8f0f1;
+
+    /* Images de fond */
+    /* --background-image-services: url('../img/services/bg.svg'); */
+    --background-image-services: linear-gradient(#90C6CD, #90C6CD);
+    --background-image-testimonials: url('../img/testimonials/bg.svg');
+    --background-image-departments: url('../img/departments/bg.svg');
+
+}

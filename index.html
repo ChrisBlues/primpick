@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full p-5 px-8 flex items-center justify-between">
+        <h1 class="text-3xl font-bold">Prime<span class="text-[#7c3aed]">Pick</span></h1>
+        <div class="hidden md:flex items-center flex-wrap gap-8">
+            <a href="" class="text-md font-mono">Home</a>
+            <a href="" class="text-md font-mono">Men</a>
+            <a href="" class="text-md font-mono">Women</a>
+            <a href="" class="text-md font-mono">New Arrivals</a>
+            <a href="" class="text-md font-mono">Sale</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <i class="ri-search-line text-[16px] md:text-[19px] cursor-pointer"></i>
+            <i class="ri-user-line text-[16px] md:text-[19px] cursor-pointer"></i>
+            <i class="ri-poker-hearts-line text-[16px] md:text-[19px] cursor-pointer"></i>
+            <div class="relative">
+                <i class="ri-shopping-cart-2-line text-[16px] md:text-[19px] cursor-pointer"></i>
+                <span
+                    class="absolute -top-2 -right-2 bg-[#7c3aed] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0
+                </span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <!-- =============================== Image en background ============================== -->
+    <section class="relative h-200 bg-cover bg-center" style="background-image: url('/assets/images/hero-bg.jpg');">
+        <div class="absolute inset-0"></div>
+
+        <!-- Badge -->
+        <div class="uppercase tracking-[8px] ml-20 pt-40 text-xl">New season collection</div>
+
+        <!-- Titre -->
+        <h1 class="text-6xl font-extrabold ml-20">Style that <br> <span class=" text-[#7c3aed]">moves with you</span>
+        </h1>
+
+        <!-- description -->
+        <p class="ml-20 pt-10 font-semibold text-xl">Discover the latest trends in fashion, footwear <br>and
+            accessories.</p>
+
+        <!-- boutons -->
+        <div class="flex">
+            <button class="ml-20 mt-10 text-2xl border-2 px-12 py-2 bg-[#7c3aed] text-white rounded-lg font-bold">Shop
+                now</button>
+            <button class="ml-10 mt-10 text-2xl border-2 px-4 py-1.5 rounded-lg font-bold">Explore collection</button>
+        </div>
+
+        </div>
+    </section>
+    <!-- ================================================================================== -->
+
+    <!-- Product Category -->
+    <section class="w-full p-5 md:p-8">
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg md:text-2xl font-serif tracking-tighter">Shop by Category</h1>
+            <a href="" class="text-[10px] md:text-[14px] text-gray-600 font-light">View All<i
+                    class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="w-full grid grid-cols-2 md:grid-cols-4 mt-2">
+
+            <div class="w-38 md:w-52 cursor-pointer">
+                <img src="assets/images/men-cat.png" class="w-full h-38 md:h-52 object-cover" alt="Men category">
+                <h1 class="text-center text-sm md:text-lg">Men</h1>
+            </div>
+
+            <div class="w-38 md:w-52 cursor-pointer">
+                <img src="assets/images/women-cat.png" class="w-full h-38 md:h-52 object-cover" alt="Women category">
+                <h1 class="text-center text-sm md:text-lg">Women</h1>
+            </div>
+
+            <div class="w-38 md:w-52 mt-2 md:mt-0 cursor-pointer">
+                <img src="assets/images/men-shirt-cat.png" class="w-full h-38 md:h-52 object-cover"
+                    alt="Men-shirt category">
+                <h1 class="text-center text-sm md:text-lg">Shirts</h1>
+            </div>
+
+            <div class="w-38 md:w-52 mt-2 md:mt-0 cursor-pointer">
+                <img src="assets/images/men-tshirt-cat.png" class="w-full h-38 md:h-52 object-cover"
+                    alt="Men-shirt category">
+                <h1 class="text-center text-sm md:text-lg">T-Shirts</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="w-full p-5 md:p-8">
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg md:text-2xl font-serif tracking-tighter">Featured Products</h1>
+            <div class="md:flex flex-wrap gap-8 hidden">
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">All</a>
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">Men</a>
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">Women</a>
+            </div>
+        </div>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-4 mt-2">
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/men-shirt.png" class="w-full h-62 md:h-52 object-cover" alt="Men shirt">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Casual Polo T-Shirt</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">4.6</h3>
+                    <h4 class="text-sm text-gray-400">(408)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र699</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र999</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/women-sweater.png" class="w-full h-62 md:h-52 object-cover" alt="women sweater">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Knitted Sweater</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">5.6</h3>
+                    <h4 class="text-sm text-gray-400">(257)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र1,999</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र2,499</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/men-hoodie.png" class="w-full h-62 md:h-52 object-cover" alt="Men hoodie">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Oversized Hoodie</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">5.8</h3>
+                    <h4 class="text-sm text-gray-400">(305)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र1,599</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र2,199</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/women-jacket.png" class="w-full h-62 md:h-52 object-cover" alt="Men hoodie">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Denim Jacket</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">3.6</h3>
+                    <h4 class="text-sm text-gray-400">(258)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र999</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र2,299</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Accessories & Shoes -->
+        <section class="w-full p-5 md:p-8">
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg md:text-2xl font-serif tracking-tighter">Accessories & Shoes</h1>
+            <div class="md:flex flex-wrap gap-8 hidden">
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">All</a>
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">Men</a>
+                <a href="#" class="hover:text-[#7c3aed] text-md duration-300 text-gray-700">Women</a>
+            </div>
+        </div>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-4 mt-2">
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/accessories.png" class="w-full h-62 md:h-52 object-cover" alt="Men shirt">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Elegant accessories</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">4.9</h3>
+                    <h4 class="text-sm text-gray-400">(218)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र799</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र1,099</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/handbag.png" class="w-full h-62 md:h-52 object-cover" alt="women sweater">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Handbag</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">7.8</h3>
+                    <h4 class="text-sm text-gray-400">(427)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र599</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र899</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/shoes.png" class="w-full h-62 md:h-52 object-cover" alt="Men hoodie">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Tennis</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">6.9</h3>
+                    <h4 class="text-sm text-gray-400">(359)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र459</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र799</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-62 mt-4 md:mt-0 rounded-sm overflow-hidden">
+                <img src="assets/images/sneakers.png" class="w-full h-62 md:h-52 object-cover" alt="Men hoodie">
+
+                <h1 class="text-center text-sm md:text-lg font-light tracking-tight mt-1">Sneakers</h1>
+
+                <div class="flex items-center gap-1">
+                    <i class="ri-star-fill text-yellow-400"></i>
+                    <h3 class="text-sm text-yellow-400">5.6</h3>
+                    <h4 class="text-sm text-gray-400">(365)</h4>
+                </div>
+
+                <div class="flex items-center justify-between mt-0">
+                    <div class="flex items-end">
+                        <h1 class="text-lg md:text-xl font-bold">र499</h1>
+                        <h3 class="text-sm text-gray-500 line-through ml-2">र699</h3>
+                    </div>
+                    <div
+                        class="w-8 cursor-pointer hover:bg-zinc-800 duration-300 h-8 rounded-sm bg-zinc-900 text-white flex items-center justify-center">
+                        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="p-5 md:p-8 bg-zinc-900 text-white md:flex md:items-center md:justify-between">
+        <div>
+            <h1 class="text-lg md:text-3xl font-semibold">PrimePick</h1>
+            <p class="text-sm text-gray-500 mt-1 tracking-tight">Your one-stop shop for all your <br>
+                fashion needs&nbsp;!
+            </p>
+
+            <div class="flex gap-5 mt-2">
+                <i class="ri-facebook-circle-fill text-[18px] md:text-[20px] cursor-pointer"></i>
+                <i class="ri-messenger-fill text-[18px] md:text-[20px] cursor-pointer"></i>
+                <i class="ri-twitter-fill text-[18px] md:text-[20px] cursor-pointer"></i>
+                <i class="ri-youtube-fill text-[18px] md:text-[20px] cursor-pointer"></i>
+            </div>
+
+        </div>
+
+        <div class="mt-5 md:mt-0 ">
+            <h1 class="text-lg md:text-[20px] font-semibold">Shop</h1>
+            <div class="flex flex-col mt-0">
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Home</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Men</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Women</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">New Arrivals</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Sale</a>
+            </div>
+        </div>
+
+        <div class="mt-5 md:mt-0 ">
+            <h1 class="text-lg md:text-[20px] font-semibold">Help</h1>
+            <div class="flex flex-col mt-0">
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Track Orders</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Return & Refund</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">FAQ's</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Contact Us</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Size Guide</a>
+            </div>
+        </div>
+
+        <div class="mt-5 md:mt-0 ">
+            <h1 class="text-lg md:text-[20px] font-semibold">Company</h1>
+            <div class="flex flex-col mt-0">
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">About Us</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Careers</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Prvacy Policy</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Terms & Conditions</a>
+                <a href="#" class="text-sm hover:text-blue-600 duration-300">Catalog</a>
+            </div>
+        </div>
+
+        <div class="mt-5 md:mt-0">
+            <h1 class="text-lg md:text-[20px] font-semibold">Subscribe</h1>
+            <div class="flex flex-col mt-5">
+                <input type="text" placeholder="Enter your email" class="w-full md:w-52 h-8 bg-zinc-800 text-white">
+                <button
+                    class="w-full md:w-52 h-8 cursor-pointer rounded-sm bg-[#7c3aed] text-white mt-2">Subscribe</button>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Code injected by live-server -->
+
+</body>
+
+</html>
